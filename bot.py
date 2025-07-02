@@ -109,7 +109,7 @@ async def top_reaction(ctx):
 
         line = f"**#{i}** – [{display_name}]({thread.jump_url}) với **{count}** reaction"
         if invalid > 0:
-            line += f" (**{invalid} reaction không đủ điều kiện**)"
+            line += f" (**và đã lọc {invalid} reaction không đủ điều kiện**)"
         response += line + "\n"
 
     await ctx.send(response)
