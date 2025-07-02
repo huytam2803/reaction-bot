@@ -32,7 +32,7 @@ FORUM_CHANNEL_ID = 1389430767217676368
 async def on_ready():
     print(f"✅ Bot đã sẵn sàng: {bot.user}")
 
-@bot.command(name="topreaction")
+@bot.command(name="atopvote")
 async def top_reaction(ctx):
     author = ctx.author
     channel = ctx.channel
